@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User infomation</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+
+    <style>
+        body {
+            margin-top: 20px;
+            color: #1a202c;
+            text-align: left;
+            background-color: #e2e8f0;
+        }
+
+        .main-body {
+            padding: 15px;
+        }
+
+        .card {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0 solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1rem;
+        }
+
+        .gutters-sm {
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+
+        .gutters-sm > .col, .gutters-sm > [class*=col-] {
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .mb-3, .my-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .text-secondary {
+            border: none;
+            outline-color: #C2262C;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body onload="accountDetail()">
+<div class="container">
+
+    <div class="main-body">
+
+        <!-- BANNER -->
+        <div class="section subbanner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="caption">FAQ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="main-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="user_information.html">User</a></li>
+                <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+            </ol>
+        </nav>
+        <!-- /Breadcrumb -->
+
+        <div class="row gutters-sm">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <!--              <img src="" id="avatar" class="rounded-circle" width="150">-->
+                            <div id="profileImg">
+
+                            </div>
+
+                            <!--              https://bootdey.com/img/Content/avatar/avatar7.png-->
+                            <div class="mt-3">
+                                <h4 id="fullName1"></h4>
+                                <p class="text-muted font-size-sm" id="address1"></p>
+                                <p class="btn btn-primary" id="roleUser"></p>
+                                <a class="btn btn-primary" href="#" onclick="logout()">logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--            thong tin acc-->
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <input id="id" hidden>
+                            <input class="col-sm-3 text-secondary" id="fullName">
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Username</h6>
+                            </div>
+                            <input class="col-sm-3 text-secondary" id="username" readonly>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Password</h6>
+                            </div>
+                            <input class="col-sm-3 text-secondary" type="password" id="password">
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Phone number</h6>
+                            </div>
+                            <input class="col-sm-3 text-secondary" id="phoneNumber">
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Address</h6>
+                            </div>
+                            <input class="col-sm-3 text-secondary" id="address">
+
+                        </div>
+                        <hr>
+                        <div class="row" id="showRoles" >
+
+                            <input id="role" hidden>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-sm-3" id="showAvatar1">
+                                <input type="file" name="avatar" id="avatar1" onchange="showAvatar1()">
+
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-12" id="showButton">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-12" id="show">
+                    <!-- Button to Open the Modal -->
+                </div>
+
+            </div>
+            <!--            het thong tin acc-->
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div id="login-logout" hidden></div>
+
+<h4 id="helloUser" hidden></h4>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+<script src="../js/jsCuong/hienThiAccount.js"></script>
+<script src="../js/jsCuong/login-logout.js"></script>
+<script src="../js/jsCuong/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('good');
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('stable');
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('bad');

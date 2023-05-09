@@ -1,0 +1,4 @@
+INSERT INTO `football_manager`.`role` (`id`, `name`) VALUES ('1', 'ROLE_ADMIN');
+INSERT INTO `football_manager`.`role` (`id`, `name`) VALUES ('2', 'ROLE_COACH');
+INSERT INTO `football_manager`.`role` (`id`, `name`) VALUES ('3', 'ROLE_PLAYER');
+INSERT INTO `football_manager`.`role` (`id`, `name`) VALUES ('4', 'ROLE_USER');

@@ -1,0 +1,134 @@
+
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('good');
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('stable');
+INSERT INTO `football_manager`.`performance` (`name`) VALUES ('bad');
+
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CF');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RW');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LW');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RMF');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CDM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CAM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LWB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RWB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('GK');
+
+
+
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Head coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Assistant coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Fitness trainer');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Goalkeeper coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Media coach');
+
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('Spain', '03/26/1982', '/src/main/resources/image/mikel-arteta.jpg', 'Miken Ateta', 1, 1, 1);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '07/23/1985', '/src/main/resources/image/Adam-Smith.jpg', 'Adam Smith', 1, 1, 2);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '06-12-1989', '/src/main/resources/image/Tony-Stack.jpg', 'Tony Stack', 1, 1, 3);
+
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('1');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('2');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('3');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('4');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('5');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('6');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('7');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('8');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('9');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('10');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('11');
+INSERT INTO `football_manager`.`week_coach` (`name`) VALUES ('12');
+
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('Spain', '03/26/1982', '/src/main/resources/image/mikel-arteta.jpg', 'Miken Ateta', 1, 1, 1);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '07/23/1985', '/src/main/resources/image/Adam-Smith.jpg', 'Adam Smith', 1, 1, 2);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '06-12-1989', '/src/main/resources/image/Tony-Stack.jpg', 'Tony Stack', 1, 1, 3);
+
+
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (80, 75, 69, 91, 84, 79);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (89, 90, 76, 93, 87, 98);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (85, 83, 63, 95, 89, 73);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (63, 90, 69, 97, 90, 65);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (79, 89, 79, 99, 82, 69);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (90, 75, 90, 80, 84, 78);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (85, 65, 82, 70, 86, 72);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (75, 99, 73, 60, 88, 92);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (95, 73, 61, 60, 73, 98);
+INSERT INTO `football_manager`.`index_player` (`acceleration`, `dribbling`, `marking`, `pass`, `physical`, `shot_power`) VALUES (79, 85, 69, 93, 83, 75);
+
+INSERT INTO `football_manager`.`week` (`number`) VALUES (1);
+INSERT INTO `football_manager`.`week` (`number`) VALUES (2);
+
+
+
+
+
+
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.55, '/src/main/resources/image/Aaron-Ramsdale.jpg', 'vuong', 9, 1, 1, 45, 1, 1, 1);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('USA', '11/12/1995', 0, 1.85, '/src/main/resources/image/Aaron-Ramsdale.jpg', 'Aaron-Ramsdale', 10, 1, 1, 85, 2, 1, 2);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('ENG', '27/03/200', 0, 1.90, '/src/main/resources/image/Ben-White.jpg', 'Ben-White', 11, 1, 1, 90, 3, 1, 3);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.86, '/src/main/resources/image/Bukayo-Saka.jpg', 'Bukayo-Saka', 12, 1, 1, 83, 4, 1, 4);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.87, '/src/main/resources/image/Eddie-Nketiah.jpg', 'Eddie-Nketiah', 13, 1, 1, 80, 5, 1, 5);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.88, '/src/main/resources/image/Emile-Smith-Rowe.jpg', 'Emile-Smith-Rowe', 14, 1, 1, 84, 6, 1, 6);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.89, '/src/main/resources/image/Fabio-Vieira.jpg', 'Fabio-Vieira', 15, 1, 1, 89, 7, 1, 7);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.79, '/src/main/resources/image/Gabriel-Jesus.jpg', 'Gabriel-Jesus', 16, 1, 1, 87, 8, 1, 8);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.78, '/src/main/resources/image/Gabriel-Magalhaes.jpg', 'Gabriel-Magalhaes', 17, 1, 1, 85, 9, 1, 9);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.77, '/src/main/resources/image/Leandro-Trossard.jpg', 'Leandro-Trossard', 99, 1, 1, 82, 10, 1, 10);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.90, '/src/main/resources/image/Granit-Xhaka.jpg', 'Granit-Xhaka', 45, 1, 1, 81, 1, 1, 11);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.79, '/src/main/resources/image/Matt-Turner.jpg', 'Matt-Turner', 23, 1, 1, 79, 2, 1, 12);
+
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.77, '/src/main/resources/image/Mohamed-Elneny.jpg', 'Mohamed-Elneny', 49, 1, 1, 91, 3, 1, 1);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.87, '/src/main/resources/image/Reiss-Nelson.jpg', 'Reiss-Nelson', 43, 1, 1, 89, 4, 1, 2);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.85, '/src/main/resources/image/William-Saliba.jpg', 'William-Saliba', 53, 1, 1, 85, 5, 1, 3);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.83, '/src/main/resources/image/Thomas-Partey.jpg', 'Thomas-Partey', 51, 1, 1, 89, 6, 1, 4);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.82, '/src/main/resources/image/Oleksandr-Zinchenko.jpg', 'Oleksandr-Zinchenko', 47, 1, 1, 84, 6, 1, 5);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.89, '/src/main/resources/image/Thomas-Partey.jpg', 'Thomas-Partey', 78, 1, 1, 88, 8, 1, 6);
+INSERT INTO `football_manager`.`player` (`address`, `date`, `formation`, `height`, `img`, `name`, `shirt_number`, `situation`, `status`, `weight`, `index_player_id`, `performance_id`, `position_id`) VALUES ('VN', '27/03/200', 0, 1.91, '/src/main/resources/image/Reiss-Nelson.jpg', 'Reiss-Nelson',29, 1, 1, 80, 10, 1, 7);
+
+
+
+
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (1000, 500, 500, 50, 1, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (950, 400, 500, 49, 2, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (900, 500, 500, 47, 3, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (850, 450, 500, 45, 4, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (800, 350, 500, 43, 5, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (750, 250, 500, 42, 6, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (700, 430, 500, 41, 7, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (650, 460, 500, 43, 8, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (600, 478, 500, 48, 9, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (700, 456, 500, 47, 10, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (800, 345, 500, 49, 11, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (900, 357, 500, 43, 12, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (1000, 457, 500, 47, 13, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (650, 432, 500, 44, 14, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (750, 435, 500, 41, 15, 2);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (850, 345, 500, 40, 16, 2);
+
+
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (1000, 500, 500, 50, 1, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (950, 400, 500, 49, 2, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (900, 500, 500, 47, 3, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (850, 450, 500, 45, 4, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (800, 350, 500, 43, 5, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (750, 250, 500, 42, 6, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (700, 430, 500, 41, 7, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (650, 460, 500, 43, 8, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (600, 478, 500, 48, 9, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (700, 456, 500, 47, 10,1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (800, 345, 500, 49, 11, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (900, 357, 500, 43, 12, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (1000, 457, 500, 47, 13, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (650, 432, 500, 44, 14, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (750, 435, 500, 41, 15, 1);
+INSERT INTO `football_manager`.`salary_player` (`capacity_salary`, `hard_salary`, `salary_bonus`, `working_hours`, `player_id`, `week_id`) VALUES (850, 345, 500, 40, 16, 1);

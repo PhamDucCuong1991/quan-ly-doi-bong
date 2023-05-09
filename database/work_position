@@ -1,0 +1,5 @@
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Head coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Assistant coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Fitness trainer');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Goalkeeper coach');
+INSERT INTO `football_manager`.`work_position` (`name`) VALUES ('Media coach');

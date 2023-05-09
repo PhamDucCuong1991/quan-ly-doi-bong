@@ -1,0 +1,15 @@
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CF');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RW');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LW');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RMF');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CDM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CAM');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('CB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('LWB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('RWB');
+INSERT INTO `football_manager`.`position` (`name`) VALUES ('GK');

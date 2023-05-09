@@ -1,0 +1,6 @@
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('Spain', '03/26/1982', '/src/main/resources/image/mikel-arteta.jpg', 'Miken Ateta', 1, 1, 1);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '07/23/1985', '/src/main/resources/image/Adam-Smith.jpg', 'Adam Smith', 1, 1, 2);
+INSERT INTO `football_manager`.`coach` (`address`, `date`, `image_path`, `name`, `status`, `typical_coach`, `position_id`)
+VALUES ('England', '06-12-1989', '/src/main/resources/image/Tony-Stack.jpg', 'Tony Stack', 1, 1, 3);
